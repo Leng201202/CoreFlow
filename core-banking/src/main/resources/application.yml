@@ -1,0 +1,19 @@
+
+spring:
+  application:
+    name: core-banking
+  datasource:
+    url: 
+    username: 
+    password: 
+    driver-class-name: org.postgresql.driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8080
