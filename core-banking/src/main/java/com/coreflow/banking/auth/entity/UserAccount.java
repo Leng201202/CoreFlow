@@ -4,6 +4,7 @@ import java.time.OffsetDateTime;
 import java.util.UUID;
 
 import com.coreflow.banking.auth.enums.UserStatus;
+import com.coreflow.banking.common.entity.BaseEntity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -25,7 +26,7 @@ import lombok.Setter;
 @NoArgsConstructor 
 @Getter 
 @Setter 
-public class UserAccount {
+public class UserAccount extends BaseEntity{
     
     @Id 
     @GeneratedValue (strategy = GenerationType.IDENTITY)
